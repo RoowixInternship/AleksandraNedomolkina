@@ -1,5 +1,5 @@
 # Личный проект
-* Студент: TatianaPodkur.
+* Студент: AleksandraNedomolkina.
 ---
 
 **Обратите внимание на файл:**
