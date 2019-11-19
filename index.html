@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+
 <html lang="ru">
 
 <head>
@@ -25,7 +26,6 @@
     </nav>
     <p>+7 906 899 92 96</p>
   </header>
-  <!--Не знаю надо ли оборачивать в div-->
   <section class='custom-cakes'>
     <h2 class='custom-cakes__header'>Торты на заказ</h2>
     <h3 class='custom-cakes__subheader'>Ручная работа</h3>
@@ -37,58 +37,55 @@
   </section>
 
   <div class='cards'>
-    <section class='our-cakes'>
-      <h2 class='our-cakes__header'>Наши торты</h2>
-      <div class='big-card'>
-        <section class='our-cakes-classic'>
+    <h2 class='our-cakes__header'>Наши торты</h2>
+    <ul>
+      <li>
+        <a href='#'>
           <h3 class='our-cakes-classic__header'>Классические</h3>
-          <h4 class='our-cakes-classic__subheader'>24 вида</h4>
-          <button type='button' class='see'>Смотреть</button>
-          <!-- Если это изображение тортика, который можно купить, то видимо он - продукт и его лучше оставить. Если нет, то нет.-->
+          <p class='our-cakes-classic__subheader'>24 вида</p>
           <img src="classic_cake.png" alt=''>
-        </section>
-      </div>
-      <div class='little-card'>
-        <section class='our-cakes-mousse'>
+        </a>
+      </li>
+      <li>
+        <a href='#'>
           <h3 class='our-cakes-mousse__header'>Муссовые</h3>
-          <h4 class='our-cakes-mousse__subheader'>12 видов</h4>
+          <p class='our-cakes-mousse__subheader'>12 видов</p>
           <img src="mousse.png" alt=''>
-          <button type='button' class='see'>Смотреть</button>
-        </section>
-      </div>
-      <div class='little-card'>
-        <section class='our-cakes-wedding'>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
           <h3 class='our-cakes-wedding__header'>Свадебные</h3>
-          <h4 class='our-cakes-wedding__subheader'>20 видов</h4>
+          <p class='our-cakes-wedding__subheader'>20 видов</p>
           <img src="wedding.png" alt=''>
-          <button type='button' class='see'>Смотреть</button>
-        </section>
-      </div>
-      <div class='little-card'>
-        <section class='our-cakes-formen'>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
           <h3 class='our-cakes-formen__header'>Мужчинам</h3>
-          <h4 class='our-cakes-formen__subheader'>12 видов</h4>
+          <p class='our-cakes-formen__subheader'>12 видов</p>
           <img src="formen.png" alt=''>
-          <button type='button' class='see'>Смотреть</button>
-        </section>
-      </div>
-      <div class='little-card'>
-        <section class='our-cakes-forwomen'>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
           <h3 class='our-cakes-forwomen__header'>Женщинам</h3>
-          <h4 class='our-cakes-forwomen__subheader'>16 видов</h4>
+          <p class='our-cakes-forwomen__subheader'>16 видов</p>
           <img src="forwomen.png" alt=''>
-          <button type='button' class='see'>Смотреть</button>
-        </section>
-      </div>
-      <div class='big-card'>
-        <section class='our-cakes-forchildren'>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
           <h3 class='our-cakes-forchildren__header'>Детские</h3>
-          <h4 class='our-cakes-forchildren__subheader'>18 видов</h4>
-          <button type='button' class='see'>Смотреть</button>
+          <p class='our-cakes-forchildren__subheader'>18 видов</p>
           <img src="forchildren.png" alt=''>
-        </section>
-      </div>
-    </section>
+        </a>
+      </li>
+    </ul>
   </div>
 
   <div class='container'>
@@ -108,9 +105,9 @@
             <div class="slider__item">
               <img src="" alt="Шоколадный ганаш">
               <div class="slider__info-wrapper">
-                <h6 class='silder__item-header'>Шоколадный ганаш</h6>
-                <p class='silder__item-description'>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
-                <p class='silder__item-cost'>1000 руб/кг</p>
+                <h6 class='slider__item-header'>Шоколадный ганаш</h6>
+                <p class='slider__item-description'>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                <p class='slider__item-cost'>1000 руб/кг</p>
                 <button type='button'>Выбрать</button>
               </div>
             </div>
@@ -143,7 +140,6 @@
         </div>
       </section>
 
-      <!-- Сказали, что можно продублировать слайдер с ганашем.Не знаю надо ли, чтобы классы у слайдера с ганашем и с оформлением отличались-->
       <section class='decor individual-order__step'>
         <h4 class='decor__header'>
           <span class='decor__header-order'>
@@ -155,33 +151,35 @@
           <button type='button'>Листать вправо</button>
           <div class='slider__inner-wrapper'>
             <div class="slider__item">
-              <img src="" alt="Ягодное ассорти">
-              <div class="slider__info-wrapper">
-                <h6 class='silder__item-header'>Ягодное ассорти</h6>
-                <p class='silder__item-cost'>700 руб/кг</p>
-                <button type='button'>Ягодное ассорти</button>
-                <img src="" alt="Маршмэллоу">
-                <div class="slider__info-wrapper">
-                  <h6 class='silder__item-header'>Маршмэллоу</h6>
-                  <p class='silder__item-cost'>600 руб/кг</p>
-                  <button type='button'>Маршмэллоу</button>
-                </div>
-              </div>
+              <button>
+               <img src="" alt="Ягодное ассорти">
+               <div class="slider__info-wrapper">
+                 <h6 class='slider__item-header'>Ягодное ассорти</h6>
+                 <p class='slider__item-cost'>700 руб/кг</p>
+               </div>
+             </button>
+              <button>
+               <img src="" alt="Маршмэллоу">
+               <div class="slider__info-wrapper">
+                 <h6 class='slider__item-header'>Маршмэллоу</h6>
+                 <p class='slider__item-cost'>600 руб/кг</p>
+               </div>
+             </button>
             </div>
           </div>
-          <form action="">
-            <fieldset>
-              <legend>Ваш выбор</legend>
-              <label for="filling">Начинка</label>
-              <input type="text" id='filling'>
-              <label for="size">Размер</label>
-              <input type="text" id='size'>
-              <label for="decor">Оформление</label>
-              <input type="text" id="decor">
-              <button type='submit'>Заказать торт</button>
-            </fieldset>
-          </form>
         </div>
+        <form action="">
+          <fieldset>
+            <legend>Ваш выбор</legend>
+            <label for="filling">Начинка</label>
+            <input type="text" id='filling'>
+            <label for="size">Размер</label>
+            <input type="text" id='size'>
+            <label for="decor">Оформление</label>
+            <input type="text" id="decor">
+            <button type='submit'>Заказать торт</button>
+          </fieldset>
+        </form>
       </section>
     </section>
   </div>
@@ -191,43 +189,45 @@
     <button type='button'>Листать влево</button>
     <button type='button'>Листать вправо</button>
     <div class='recall-slider'>
-      <h3 class='recall-slider__header'>Мария</h3>
-      <h4 class='recall-slider__subheader'>юрист, 33 года</h4>
-      <p class='redall-slider__content'>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) </p>
-      <button type="button">Развернуть</button>
+      <button>
+        <h3 class='recall-slider__header'>Мария</h3>
+        <p class='recall-slider__subheader'>юрист, 33 года</p>
+        <div class="recall-slider__info-wrapper">
+        <p class='recall-slider__content'>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) </p>
+        <p class='recall-slider__button'>Развернуть</p>
+        </div>
+        </button>
     </div>
   </div>
 
   <section class='about-us'>
     <h2 class='about-us__header'>О нас</h2>
-    <h3 class='about-us__subheader'>О кондитере</h3>
+    <p class='about-us__subheader'>О кондитере</p>
     <div class='about-us__article'>
       <p class='about-us__highlighter'>Кондитер – как призвание</p>
       <p class='about-us__content'>Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
       <p class='about-us__highlighter'>Принцип – натуральные ингредиенты</p>
       <p class='about-us__content'>Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.</p>
     </div>
-    <div class='share'>
-      <a href="#">Instagram</a>
-      <a href="#">Вконтакте</a>
-      <a href="#">Twitter</a>
-    </div>
+    <ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Вконтакте</a></li>
+      <li><a href="#">Twitter</a></li>
+    </ul>
   </section>
-  <!--Без понятия куда девать это высказывание.-->
-  <p class='big-smart-thought'>Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
+
+  <blockquote>Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</blockquote>
 
   <div class='advantages'>
     <section class=our-advantages>
-      <h2 class='our-advantages__header'>Наши преимущества</h2>
-      <h3 class='our-advantages__subheader'>Почему нас выбирают ?</h3>
-      <p class='our-advantages__highlighter'>Без искусственных добавок</p>
-      <p class='our-advantages__content'>Работаем с натуральными ингредиентами и свежими продуктами</p>
-      <p class='our-advantages__highlighter'>Свежий торт в день торжества</p>
-      <p class='our-advantages__content'>Торты изготавливаются в течение суток до отправки</p>
+      <h6 class='our-advantages__header'>Наши преимущества</h6>
+      <p class='our-advantages__subheader'>Почему нас выбирают?</p>
+      <p class='our-advantages__content'> <span>Без искусственных добавок</span> Работаем с натуральными ингредиентами и свежими продуктами</p>
+      <p class='our-advantages__content'><span>Свежий торт в день торжества</span> Торты изготавливаются в течение суток до отправки</p>
     </section>
     <section class='care'>
       <h2 class='care__header'>Забота о клиентах</h2>
-      <h3 class='care__subheader'>Для нас важно</h3>
+      <p class='care__subheader'>Для нас важно</p>
       <p class='care__content'>Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
     </section>
   </div>
@@ -235,38 +235,48 @@
   <div class='list'>
     <h2 class='instruction'>Как заказать</h2>
     <ol class='instruction-list'>
-      <li> <span>Срок заказа</span>Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю. </li>
-      <li><span>Доставка по городу</span>Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно. </li>
+      <li> <span>Срок заказа</span>Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</li>
+      <li><span>Доставка по городу</span>Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</li>
       <li><span>Доставка за городом</span>Доставка за пределами города рассчитывается индивидуально.</li>
     </ol>
   </div>
 
   <div class='contacts'>
     <h2 class='contacts__header'>Контакты</h2>
-    <h3 class='contacts__subheader'>Остались вопросы?</h3>
+    <p class='contacts__subheader'>Остались вопросы?</p>
     <p class='contacts-instruction'>Заполните форму ниже и наш кондитер свяжется с Вами</p>
     <form action="">
       <fieldset>
+        <label for="name">Ваше имя</label>
         <input type="text" id='name' placeholder="Ваше имя">
+        <label for="adress">Email  адрес</label>
         <input type="text" id='adress' placeholder="Email  адрес">
+        <label for="question">Ваш вопрос</label>
         <input type="text" id='question' placeholder="Ваш вопрос">
         <button type="submit">Отправить</button>
       </fieldset>
     </form>
-    <p class='contacts-instruction'>Или позвоните по телефону:+7 906 899 92 96 Наша почта : bakerybypavel@mail.ru Мы в соц. сетях:</p>
-    <a href="#">Instagram</a>
-    <a href="#">Вконтакте</a>
+    <p class='contacts-tel'>Или позвоните по телефону:
+      <a href='tel:+79068999296'>+7 906 899 92 96</a></p>
+    <p class='contacts-mail'>Наша почта:
+      <a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></p>
+    <p>Мы в соц. сетях:
+      <a href="#">Instagram</a>
+      <a href="#">Вконтакте</a>
+    </p>
   </div>
   <footer>
     <p>Cakes</p>
-    <a href="#">Наши торты</a>
-    <a href="#">Индивидуальный заказ</a>
-    <a href="#">Отзывы</a>
-    <a href="#">О нас</a>
-    <a href="#">Как заказать</a>
-    <a href="#">Контакты</a>
-    <a href="#">Instagram</a>
-    <a href="#">Вконтакте</a>
+    <nav>
+      <a href="#">Наши торты</a>
+      <a href="#">Индивидуальный заказ</a>
+      <a href="#">Отзывы</a>
+      <a href="#">О нас</a>
+      <a href="#">Как заказать</a>
+      <a href="#">Контакты</a>
+      <a href="#">Instagram</a>
+      <a href="#">Вконтакте</a>
+    </nav>
     <p>© 2018 Cakes</p>
   </footer>
 </body>
