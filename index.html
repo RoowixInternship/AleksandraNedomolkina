@@ -26,16 +26,17 @@
     </nav>
     <p>+7 906 899 92 96</p>
   </header>
-  <section class='custom-cakes'>
+  <div class='cake'>
+   <section class='custom-cakes'>
     <h2 class='custom-cakes__header'>Торты на заказ</h2>
-    <h3 class='custom-cakes__subheader'>Ручная работа</h3>
+    <p class='custom-cakes__subheader'>Ручная работа</p>
     <button type="button">выбрать торт</button>
     <ul class='custom-cakes__advantages'>
       <li>Натуральные ингредиенты</li>
       <li>Доставка бесплатно при заказе от 2000 рублей</li>
     </ul>
-  </section>
-
+   </section>
+  </div>
   <div class='cards'>
     <h2 class='our-cakes__header'>Наши торты</h2>
     <ul>
@@ -125,15 +126,15 @@
             <img src="" alt="">
             17-18 см
           </button>
-          <button class='sizes__item'>
+          <button class='sizes__item' data-type=''>
             <img src="" alt="">
             23-24 см
           </button>
-          <button class='sizes__item'>
+          <button class='sizes__item' data-type=''>
             <img src="" alt="">
             25 и 20 см
           </button>
-          <button class='sizes__item'>
+          <button class='sizes__item' data-type=''>
             <img src="" alt="">
             30, 25 и 18 см
           </button>
@@ -158,6 +159,8 @@
                  <p class='slider__item-cost'>700 руб/кг</p>
                </div>
              </button>
+            </div>
+            <div class="slider__item">
               <button>
                <img src="" alt="Маршмэллоу">
                <div class="slider__info-wrapper">
@@ -188,7 +191,8 @@
     <h2 class='recall__header'>Отзывы</h2>
     <button type='button'>Листать влево</button>
     <button type='button'>Листать вправо</button>
-    <div class='recall-slider'>
+    <div class='recall-slider__inner-wrapper'>
+    <div class='recall-slider__item'>
       <button>
         <h3 class='recall-slider__header'>Мария</h3>
         <p class='recall-slider__subheader'>юрист, 33 года</p>
@@ -196,10 +200,10 @@
         <p class='recall-slider__content'>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) </p>
         <p class='recall-slider__button'>Развернуть</p>
         </div>
-        </button>
+      </button>
     </div>
   </div>
-
+ </div>
   <section class='about-us'>
     <h2 class='about-us__header'>О нас</h2>
     <p class='about-us__subheader'>О кондитере</p>
@@ -235,9 +239,15 @@
   <div class='list'>
     <h2 class='instruction'>Как заказать</h2>
     <ol class='instruction-list'>
-      <li> <span>Срок заказа</span>Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</li>
-      <li><span>Доставка по городу</span>Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</li>
-      <li><span>Доставка за городом</span>Доставка за пределами города рассчитывается индивидуально.</li>
+      <li> 
+        <span>Срок заказа</span>
+        Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</li>
+      <li>
+        <span>Доставка по городу</span>
+        Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</li>
+      <li>
+        <span>Доставка за городом</span>
+        Доставка за пределами города рассчитывается индивидуально.</li>
     </ol>
   </div>
 
@@ -257,9 +267,11 @@
       </fieldset>
     </form>
     <p class='contacts-tel'>Или позвоните по телефону:
-      <a href='tel:+79068999296'>+7 906 899 92 96</a></p>
+      <a href='tel:+79068999296'>+7 906 899 92 96</a>
+    </p>
     <p class='contacts-mail'>Наша почта:
-      <a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></p>
+      <a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a>
+    </p>
     <p>Мы в соц. сетях:
       <a href="#">Instagram</a>
       <a href="#">Вконтакте</a>

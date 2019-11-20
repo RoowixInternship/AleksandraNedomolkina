@@ -1,18 +1,36 @@
 body {
+  margin: 0;
   background-color: #fbebea;
+  max-width: 1366px;
 }
 
-a {
+/*Custom-cakes*/
+.custom-cakes__a {
   font-family: PTSans;
   font-size: 7px;
   line-height: 2px;
   color: #2d2829;
 }
 
-button {
+.custom-cakes__header{
+ width: 353px;
+  height: 127px;
+  font-family: PlayfairDisplay;
+  font-size: 78px;
+  text-align: left;
+}
+.custom-cakes__subheader{
+  width: 259px;
+  height: 43px;
+  font-family: 'Marck Script', cursive;
+  font-size: 35px;
+  line-height: 37px;
+  text-align: left;
+}                     
+
+.button{
   width: 113px;
   height: 25.5px;
-  border-radius: 12.8px;
+  border-radius: 50%;
   background-color: #f50049;
 }
-
