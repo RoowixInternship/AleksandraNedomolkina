@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+
+<head>
+  <!--кодировка документа — набор символов, которые в нём можно использовать -->
+  <meta charset="UTF-8">
+  <!--viewport - позволяет веб-разработчикам контролировать размер окна просмотра и масштаб страницы;  content="width=device-width - ширину экрана в пикселях CSS в масштабе 100%; initial-scale=1.0" - уровень масштабирования при первой загрузке страницы // как поняла, вся эта штука позволяет аккуратно сжать сайт для мобильных устройств и достаточно четко отображать текст и изо, но изо можно как-то делать еще четче -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- совместимость с последним Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- title отображается в заголовке окна браузера или на вкладке страницы -->
+  <title>Cakes</title>
+</head>
+
+<body>
+  <header>
+    <p>Cakes</p>
+    <nav>
+      <a href="#">наши торты</a>
+      <a href="#">индивидуальный заказ</a>
+      <a href="#">отзывы</a>
+      <a href="#">о нас</a>
+      <a href="#">как заказать</a>
+      <a href="#">контакты</a>
+    </nav>
+    <p>+7 906 899 92 96</p>
+  </header>
+  <div class='cake'>
+   <section class='custom-cakes'>
+    <h2 class='custom-cakes__header'>Торты на заказ</h2>
+    <p class='custom-cakes__subheader'>Ручная работа</p>
+    <button type="button">выбрать торт</button>
+    <ul class='custom-cakes__advantages'>
+      <li>Натуральные ингредиенты</li>
+      <li>Доставка бесплатно при заказе от 2000 рублей</li>
+    </ul>
+   </section>
+  </div>
+  <div class='cards'>
+    <h2 class='our-cakes__header'>Наши торты</h2>
+    <ul>
+      <li>
+        <a href='#'>
+          <h3 class='our-cakes-classic__header'>Классические</h3>
+          <p class='our-cakes-classic__subheader'>24 вида</p>
+          <img src="classic_cake.png" alt=''>
+        </a>
+      </li>
+      <li>
+        <a href='#'>
+          <h3 class='our-cakes-mousse__header'>Муссовые</h3>
+          <p class='our-cakes-mousse__subheader'>12 видов</p>
+          <img src="mousse.png" alt=''>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h3 class='our-cakes-wedding__header'>Свадебные</h3>
+          <p class='our-cakes-wedding__subheader'>20 видов</p>
+          <img src="wedding.png" alt=''>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h3 class='our-cakes-formen__header'>Мужчинам</h3>
+          <p class='our-cakes-formen__subheader'>12 видов</p>
+          <img src="formen.png" alt=''>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h3 class='our-cakes-forwomen__header'>Женщинам</h3>
+          <p class='our-cakes-forwomen__subheader'>16 видов</p>
+          <img src="forwomen.png" alt=''>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <h3 class='our-cakes-forchildren__header'>Детские</h3>
+          <p class='our-cakes-forchildren__subheader'>18 видов</p>
+          <img src="forchildren.png" alt=''>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class='container'>
+    <section class='individual-order'>
+      <h2 class='individual-order__header'>Индивидуальный заказ</h2>
+      <p class='individual-order__subheader'>Соберите торт в 3 шага</p>
+      <section class='filling individual-order__step'>
+        <h4 class='filling__header'>
+          <span class='filling__header-order'>
+            01
+          </span> Выберите начинку
+        </h4>
+        <div class="slider">
+          <button type='button'>Листать влево</button>
+          <button type='button'>Листать вправо</button>
+          <div class='slider__inner-wrapper'>
+            <div class="slider__item">
+              <img src="" alt="Шоколадный ганаш">
+              <div class="slider__info-wrapper">
+                <h6 class='slider__item-header'>Шоколадный ганаш</h6>
+                <p class='slider__item-description'>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                <p class='slider__item-cost'>1000 руб/кг</p>
+                <button type='button'>Выбрать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='sizes individual-order__step'>
+        <h4 class='sizes__header'>
+          <span class='sizes__header-order'>
+            02
+          </span> Размер
+        </h4>
+        <div class="sizes__list">
+          <button class='sizes__item' data-type=''>
+            <img src="" alt="">
+            17-18 см
+          </button>
+          <button class='sizes__item' data-type=''>
+            <img src="" alt="">
+            23-24 см
+          </button>
+          <button class='sizes__item' data-type=''>
+            <img src="" alt="">
+            25 и 20 см
+          </button>
+          <button class='sizes__item' data-type=''>
+            <img src="" alt="">
+            30, 25 и 18 см
+          </button>
+        </div>
+      </section>
+
+      <section class='decor individual-order__step'>
+        <h4 class='decor__header'>
+          <span class='decor__header-order'>
+            03
+          </span> Оформление
+        </h4>
+        <div class="slider">
+          <button type='button'>Листать влево</button>
+          <button type='button'>Листать вправо</button>
+          <div class='slider__inner-wrapper'>
+            <div class="slider__item">
+              <button>
+               <img src="" alt="Ягодное ассорти">
+               <div class="slider__info-wrapper">
+                 <h6 class='slider__item-header'>Ягодное ассорти</h6>
+                 <p class='slider__item-cost'>700 руб/кг</p>
+               </div>
+             </button>
+            </div>
+            <div class="slider__item">
+              <button>
+               <img src="" alt="Маршмэллоу">
+               <div class="slider__info-wrapper">
+                 <h6 class='slider__item-header'>Маршмэллоу</h6>
+                 <p class='slider__item-cost'>600 руб/кг</p>
+               </div>
+             </button>
+            </div>
+          </div>
+        </div>
+        <form action="">
+          <fieldset>
+            <legend>Ваш выбор</legend>
+            <label for="filling">Начинка</label>
+            <input type="text" id='filling'>
+            <label for="size">Размер</label>
+            <input type="text" id='size'>
+            <label for="decor">Оформление</label>
+            <input type="text" id="decor">
+            <button type='submit'>Заказать торт</button>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+  </div>
+
+  <div class='recall'>
+    <h2 class='recall__header'>Отзывы</h2>
+    <button type='button'>Листать влево</button>
+    <button type='button'>Листать вправо</button>
+    <div class='recall-slider__inner-wrapper'>
+    <div class='recall-slider__item'>
+      <button>
+        <h3 class='recall-slider__header'>Мария</h3>
+        <p class='recall-slider__subheader'>юрист, 33 года</p>
+        <div class="recall-slider__info-wrapper">
+        <p class='recall-slider__content'>Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:) </p>
+        <p class='recall-slider__button'>Развернуть</p>
+        </div>
+      </button>
+    </div>
+  </div>
+ </div>
+  <section class='about-us'>
+    <h2 class='about-us__header'>О нас</h2>
+    <p class='about-us__subheader'>О кондитере</p>
+    <div class='about-us__article'>
+      <p class='about-us__highlighter'>Кондитер – как призвание</p>
+      <p class='about-us__content'>Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
+      <p class='about-us__highlighter'>Принцип – натуральные ингредиенты</p>
+      <p class='about-us__content'>Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.</p>
+    </div>
+    <ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Вконтакте</a></li>
+      <li><a href="#">Twitter</a></li>
+    </ul>
+  </section>
+
+  <blockquote>Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</blockquote>
+
+  <div class='advantages'>
+    <section class=our-advantages>
+      <h6 class='our-advantages__header'>Наши преимущества</h6>
+      <p class='our-advantages__subheader'>Почему нас выбирают?</p>
+      <p class='our-advantages__content'> <span>Без искусственных добавок</span> Работаем с натуральными ингредиентами и свежими продуктами</p>
+      <p class='our-advantages__content'><span>Свежий торт в день торжества</span> Торты изготавливаются в течение суток до отправки</p>
+    </section>
+    <section class='care'>
+      <h2 class='care__header'>Забота о клиентах</h2>
+      <p class='care__subheader'>Для нас важно</p>
+      <p class='care__content'>Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+    </section>
+  </div>
+
+  <div class='list'>
+    <h2 class='instruction'>Как заказать</h2>
+    <ol class='instruction-list'>
+      <li> 
+        <span>Срок заказа</span>
+        Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</li>
+      <li>
+        <span>Доставка по городу</span>
+        Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</li>
+      <li>
+        <span>Доставка за городом</span>
+        Доставка за пределами города рассчитывается индивидуально.</li>
+    </ol>
+  </div>
+
+  <div class='contacts'>
+    <h2 class='contacts__header'>Контакты</h2>
+    <p class='contacts__subheader'>Остались вопросы?</p>
+    <p class='contacts-instruction'>Заполните форму ниже и наш кондитер свяжется с Вами</p>
+    <form action="">
+      <fieldset>
+        <label for="name">Ваше имя</label>
+        <input type="text" id='name' placeholder="Ваше имя">
+        <label for="adress">Email  адрес</label>
+        <input type="text" id='adress' placeholder="Email  адрес">
+        <label for="question">Ваш вопрос</label>
+        <input type="text" id='question' placeholder="Ваш вопрос">
+        <button type="submit">Отправить</button>
+      </fieldset>
+    </form>
+    <p class='contacts-tel'>Или позвоните по телефону:
+      <a href='tel:+79068999296'>+7 906 899 92 96</a>
+    </p>
+    <p class='contacts-mail'>Наша почта:
+      <a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a>
+    </p>
+    <p>Мы в соц. сетях:
+      <a href="#">Instagram</a>
+      <a href="#">Вконтакте</a>
+    </p>
+  </div>
+  <footer>
+    <p>Cakes</p>
+    <nav>
+      <a href="#">Наши торты</a>
+      <a href="#">Индивидуальный заказ</a>
+      <a href="#">Отзывы</a>
+      <a href="#">О нас</a>
+      <a href="#">Как заказать</a>
+      <a href="#">Контакты</a>
+      <a href="#">Instagram</a>
+      <a href="#">Вконтакте</a>
+    </nav>
+    <p>© 2018 Cakes</p>
+  </footer>
+</body>
+
+</html>
